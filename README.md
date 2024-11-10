@@ -65,8 +65,11 @@ We can represent the researchers findings formally in the following way:
 4. Performance with emergence: Here we observe a noted change in performance of the model after reaching the emergence threshold, as denoted by:
 
    *P(T, S)* = {
+   
       *f*<sub>base</sub>(*S*),      if *S* < *S*<sub>threshold</sub>
+      
       *f*<sub>emergent</sub>(*S*),  if *S* >= *S*<sub>threshold</sub>
+      
     }
 
 6. Relationship between emergence and scale: We can assume performance increases exponentially after the phase transition is reached:
@@ -81,8 +84,23 @@ We can represent the researchers findings formally in the following way:
 
    - Where δ is a performance improvement threshold, signaling emergence has been met.
 
-
 ### Findings
+
+The authors’ findings on the effect of increasing model scale on performance revealed a unique phenomenon: *emergent abilities* that appear only in models exceeding a specific scale threshold. This phenomenon was observed consistently across five different types of models—LaMDA, GPT-3, Gopher, Chinchilla, and PaLM—and across eight distinct task types, all evaluated using few-shot prompting techniques. These tasks span various benchmarks, including arithmetic, word unscrambling, conceptual mapping, question-answering, and multi-task language understanding, providing a comprehensive scope for observing emergent abilities in diverse settings.
+
+Here are the observed performance curves:
+
+<img width="1083" alt="Screenshot 2024-11-10 at 5 29 31 PM" src="https://github.com/user-attachments/assets/67ce7215-2e1c-4d97-b087-17f11376afb2">
+
+As shown, across nearly all model and task combinations, the performance curves follow a consistent pattern: flat, random, or weakly positive until the model reaches a certain scale threshold. At this point—where the performance curves cross the pink horizontal line marking the critical *phase transition*—performance begins to increase sharply, often at near-exponential rates. This threshold acts as a clear indicator of emergent abilities, signifying that the model has reached a scale where it can perform these tasks significantly better than random or baseline levels.
+
+The authors also examined whether this threshold effect persisted across variations in prompt and task setup. They tested specialized prompting techniques and fine-tuning across different models, finding that even with these optimized conditions, models needed to surpass a certain scale threshold to exhibit emergent abilities. This suggests that emergent performance is inherently tied to model size and compute rather than prompt-specific optimizations.
+
+Here are the performance curves observed under these different prompting and fine-tuning scenarios:
+
+<img width="915" alt="Screenshot 2024-11-10 at 5 37 54 PM" src="https://github.com/user-attachments/assets/bc2f9d1c-cf6b-4508-98d0-90038c66d3e2">
+
+These findings provide strong evidence that emergent abilities are not exclusive to one type of task or model architecture but are a consistent outcome of scaling across various contexts. This pattern reinforces the critical role of scale in unlocking capabilities that smaller models are unable to achieve, even with additional task-specific tuning.
 
 ## Insights, Impacts, and Next Steps
 
