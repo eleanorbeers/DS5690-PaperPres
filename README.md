@@ -90,7 +90,7 @@ The authors’ findings on the effect of increasing model scale on performance r
 
 Here are the observed performance curves:
 
-<img width="1083" alt="Screenshot 2024-11-10 at 5 29 31 PM" src="https://github.com/user-attachments/assets/67ce7215-2e1c-4d97-b087-17f11376afb2">
+<img width="605" alt="Screenshot 2024-11-10 at 5 41 00 PM" src="https://github.com/user-attachments/assets/e022bc03-9a55-4310-8e52-c344f151f3c9">
 
 As shown, across nearly all model and task combinations, the performance curves follow a consistent pattern: flat, random, or weakly positive until the model reaches a certain scale threshold. At this point—where the performance curves cross the pink horizontal line marking the critical *phase transition*—performance begins to increase sharply, often at near-exponential rates. This threshold acts as a clear indicator of emergent abilities, signifying that the model has reached a scale where it can perform these tasks significantly better than random or baseline levels.
 
