@@ -100,13 +100,16 @@ Here are the performance curves observed under these different prompting and fin
 
 <img width="915" alt="Screenshot 2024-11-10 at 5 37 54 PM" src="https://github.com/user-attachments/assets/bc2f9d1c-cf6b-4508-98d0-90038c66d3e2">
 
-These findings provide strong evidence that emergent abilities are not exclusive to one type of task or model architecture but are a consistent outcome of scaling across various contexts. This pattern reinforces the critical role of scale in unlocking capabilities that smaller models are unable to achieve, even with additional task-specific tuning.
+As discussed earlier, the researchers noted that model scale can be defined and measured in several ways beyond compute (measured in FLOPs) alone. Model size (number of parameters) and the size of the model’s training dataset are additional ways to quantify scale. However, because model size and compute typically go hand-in-hand—since larger models require more compute—the authors chose to focus on compute in their primary analysis. They did, however, include performance curves as a function of model parameters in the appendix. These curves show that similar performance patterns are observed when measuring performance by model parameters, indicating that this is another effective way to measure scale.
 
-## Insights, Impacts, and Next Steps
+<img width="593" alt="Screenshot 2024-11-10 at 5 49 53 PM" src="https://github.com/user-attachments/assets/ac027266-604e-4a56-b3d4-b12a65b10df2">
 
-### Critical Analysis
+
+## Insights, Impacts, and Next Steps 
 
 ### Impact
+
+In this paper, the researchers identify a phenomenon unique to large-scale LLMs that they dub "emergent abilities". Across a wide array of model types and tasks, a drastic increase in performance is observed past a certain model scale.
 
 ### Future Directions
 
