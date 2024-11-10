@@ -46,6 +46,42 @@ To demonstrate the widespread nature of emergent abilities, the researchers test
 
 Furthermore, to illustrate the robustness of emergent abilities, the authors explore cases where specialized prompting or fine-tuning is applied. Despite these additional techniques, the phenomenon of emergent abilities remains consistent: performance improvement does not occur until the model reaches a substantial scale threshold. This consistency was demonstrated using LaMDA and Anthropic models, reinforcing the conclusion that emergent abilities depend significantly on scale.
 
+#### Formal Representation (Pseudocode)
+
+We can represent the researchers findings formally in the following way:
+
+1. Model scale: We let *S* represent the scale of our model, which is measured in FLOPs.
+  - *S* = FLOPs
+
+2. Phase Transition: We let *S<sub>threshold* represent the critical point in scale at which model performance is no longer random, but rather a direct function of model scale. Thus, emergent abilities are observed when:
+   - *S* ≥ *S<sub>threshold*
+     
+3. Model performance: We measure model performance on task *T* as a function of scale *S*. We observe two distinct relationships here, depending on whether phase transition has been surpassed or not.
+   - For *S* ≤ *S<sub>threshold*
+     - P(*T, S*) ≈ random baseline performance
+   - For *S* ≥ *S<sub>threshold*
+     - P(*T, S*) increases as a function of *S*
+    
+4. Performance with emergence: Here we observe a noted change in performance of the model after reaching the emergence threshold, as denoted by:
+   $$
+    P(T, S) = 
+    \begin{cases} 
+    f_{\text{base}}(S) & \text{if } S < S_{\text{threshold}} \\ 
+    f_{\text{emergent}}(S) & \text{if } S \geq S_{\text{threshold}} 
+    \end{cases}
+    $$
+
+5. Relationship between emergence and scale: We can assume performance increases exponentially after the phase transition is reached:
+   $$
+   f_{\text{emergent}}(S) = \alpha \cdot e^{\beta (S - S_{\text{threshold}})}
+   $$
+   - Where α and β are constants that control the rate of emergent performance ***after*** the threshold has been reached.
+  
+6. Detecting emergence: We define the following relationship to represent the relationship between the emergence threshold and scale and detect when the threshold has been met (i.e., when emergent abilities can be observed):
+   $$
+   P(T, S) - f_{\text{base}}(S) > \delta
+   $$
+   - Where δ is a performance improvement threshold, signaling emergence has been met.
 
 
 ### Findings
