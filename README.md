@@ -63,24 +63,22 @@ We can represent the researchers findings formally in the following way:
      - P(*T, S*) increases as a function of *S*
     
 4. Performance with emergence: Here we observe a noted change in performance of the model after reaching the emergence threshold, as denoted by:
-   $$
-    P(T, S) = 
-    \begin{cases} 
-    f_{\text{base}}(S) & \text{if } S < S_{\text{threshold}} \\ 
-    f_{\text{emergent}}(S) & \text{if } S \geq S_{\text{threshold}} 
-    \end{cases}
-    $$
 
-5. Relationship between emergence and scale: We can assume performance increases exponentially after the phase transition is reached:
-   $$
-   f_{\text{emergent}}(S) = \alpha \cdot e^{\beta (S - S_{\text{threshold}})}
-   $$
+   *P(T, S)* = {
+      *f*<sub>base</sub>(*S*),      if *S* < *S*<sub>threshold</sub>
+      *f*<sub>emergent</sub>(*S*),  if *S* >= *S*<sub>threshold</sub>
+    }
+
+6. Relationship between emergence and scale: We can assume performance increases exponentially after the phase transition is reached:
+
+    *f*<sub>emergent</sub>(*S*) = *α* ⋅ *e*<sup>β (*S* - *S*<sub>threshold</sub>)</sup>
+
    - Where α and β are constants that control the rate of emergent performance ***after*** the threshold has been reached.
   
-6. Detecting emergence: We define the following relationship to represent the relationship between the emergence threshold and scale and detect when the threshold has been met (i.e., when emergent abilities can be observed):
-   $$
-   P(T, S) - f_{\text{base}}(S) > \delta
-   $$
+8. Detecting emergence: We define the following relationship to represent the relationship between the emergence threshold and scale and detect when the threshold has been met (i.e., when emergent abilities can be observed):
+
+   *P(T, S)* - *f*<sub>base</sub>(*S*) > *δ*
+
    - Where δ is a performance improvement threshold, signaling emergence has been met.
 
 
