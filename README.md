@@ -115,11 +115,13 @@ Additionally, SLMs often outperform larger models in certain tasks because they 
 
 The impact of these findings lies in their demonstration that certain capabilities are only accessible in large-scale models. This is a crucial insight as it suggests that, regardless of optimization or specialized training, there are abilities that small models simply cannot achieve. By showing that these emergent abilities require substantial scale, the paper highlights a fundamental trade-off in the development of language models: the efficiency and portability of SLMs versus the enhanced, often unexpected, capabilities that come with scaling up. The results here suggest that while SLMs have their place, large-scale models remain essential for applications requiring these unique emergent abilities, especially in complex, interdisciplinary tasks where smaller models may fall short.
 
-[risks]
+In addition to the positive impact of scale on model performance, the researchers also highlighted the potential for emergent risks that accompany these observed emergent abilities. If increasing scale leads to dramatic improvements in model capabilities, could it also amplify issues such as bias, toxicity, and dishonesty? These risks are already prevalent in current LLMs, where large-scale models sometimes exhibit harmful biases or generate misleading information. The researchers raise the question: as we continue to push the boundaries of scale, will these risks grow proportionately? And, if so, could they reach levels that might outweigh the benefits of further scaling? This discussion underscores the need for ongoing scrutiny as models become larger, ensuring that the development of LLMs does not lead to unintended consequences at unprecedented scales.
 
 ### Future Directions
 
-scale up, figure out why this phenomenon exists and how to predict it
+The most obvious, and perhaps most important, direction provided by this paper is the need to continue scaling models up to reach new heights in performance. We have yet to observe a tipping point in this phenomenon, suggesting that the potential for improvement remains untapped and could be far greater than anticipated. Finding this tipping point—or even understanding if one exists—requires a deeper dive into the mechanisms behind this phenomenon and a way to predict when and why emergence occurs.
+
+Additionally, the researchers note that while model scale has a clear impact on performance, it’s not the only factor. Continued improvements in prompting techniques and the scaling of datasets are other viable ways to enhance model performance. These approaches are appealing because they may achieve gains with far fewer computational resources than scaling up models themselves. Exploring these alternatives alongside model scaling could lead to a more balanced approach to advancing language models.
 
 ### Limitations and Potential Extensions
 
