@@ -79,7 +79,7 @@ We can represent the researchers findings formally in the following way:
 
    - Where δ is a performance improvement threshold, signaling emergence has been met.
   
-* *See **pseudocode.ipynb** for code version of pseudocode*
+*See **demo.ipynb** for code version of pseudocode*
 
 ### Findings
 
