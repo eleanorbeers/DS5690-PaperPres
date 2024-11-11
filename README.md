@@ -51,36 +51,31 @@ Furthermore, to illustrate the robustness of emergent abilities, the authors exp
 We can represent the researchers findings formally in the following way:
 
 1. Model scale: We let *S* represent the scale of our model, which is measured in FLOPs.
-  - *S* = FLOPs
+
+    ![image](https://github.com/user-attachments/assets/8d8f9df5-9ed4-4994-986a-c1712570be0e)
 
 2. Phase Transition: We let *S<sub>threshold* represent the critical point in scale at which model performance is no longer random, but rather a direct function of model scale. Thus, emergent abilities are observed when:
-   - *S* ≥ *S<sub>threshold*
+
+    ![image](https://github.com/user-attachments/assets/30a5d08d-6f27-4b2e-b7df-adeb12a353c3)
+
      
 3. Model performance: We measure model performance on task *T* as a function of scale *S*. We observe two distinct relationships here, depending on whether phase transition has been surpassed or not.
-   - For *S* ≤ *S<sub>threshold*
-     - P(*T, S*) ≈ random baseline performance
-   - For *S* ≥ *S<sub>threshold*
-     - P(*T, S*) increases as a function of *S*
-    
+
+    ![image](https://github.com/user-attachments/assets/862943a2-c07f-47bd-9cd2-520b0cae5bc5)
+
 4. Performance with emergence: Here we observe a noted change in performance of the model after reaching the emergence threshold, as denoted by:
 
-   *P(T, S)* = {
-   
-      *f*<sub>base</sub>(*S*),      if *S* < *S*<sub>threshold</sub>
-      
-      *f*<sub>emergent</sub>(*S*),  if *S* >= *S*<sub>threshold</sub>
-      
-    }
+    ![image](https://github.com/user-attachments/assets/e5543a06-c6de-4c29-802b-a4dcf8b42d04)
 
-6. Relationship between emergence and scale: We can assume performance increases exponentially after the phase transition is reached:
+5. Relationship between emergence and scale: We can assume performance increases exponentially after the phase transition is reached:
 
-    *f*<sub>emergent</sub>(*S*) = *α* ⋅ *e*<sup>β (*S* - *S*<sub>threshold</sub>)</sup>
+    ![image](https://github.com/user-attachments/assets/460d6fd3-3ebb-41e3-a911-6d7b6832d606)
 
    - Where α and β are constants that control the rate of emergent performance ***after*** the threshold has been reached.
   
-8. Detecting emergence: We define the following relationship to represent the relationship between the emergence threshold and scale and detect when the threshold has been met (i.e., when emergent abilities can be observed):
+6. Detecting emergence: We define the following relationship to represent the relationship between the emergence threshold and scale and detect when the threshold has been met (i.e., when emergent abilities can be observed):
 
-   *P(T, S)* - *f*<sub>base</sub>(*S*) > *δ*
+    ![image](https://github.com/user-attachments/assets/8325827d-a0e9-40e8-92dc-acde68405c32)
 
    - Where δ is a performance improvement threshold, signaling emergence has been met.
 
