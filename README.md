@@ -109,11 +109,21 @@ As discussed earlier, the researchers noted that model scale can be defined and 
 
 ### Impact
 
-In this paper, the researchers identify a phenomenon unique to large-scale LLMs that they dub "emergent abilities". Across a wide array of model types and tasks, a drastic increase in performance is observed past a certain model scale.
+In this paper, the researchers identify a phenomenon unique to large-scale LLMs that they call "emergent abilities." Across a broad range of model types and tasks, a dramatic increase in performance is observed once models pass a certain scale threshold. This discovery is particularly relevant at a time when small language models (SLMs) are gaining popularity due to their efficiency and ability to run standalone on mobile devices. SLMs enable users to interact with the model directly on their device without relying on external computational resources, as would be necessary when using a traditional LLM, like ChatGPT or Claude.
+
+Additionally, SLMs often outperform larger models in certain tasks because they are trained on specific domains, allowing them to excel in specialized areas. For example, an SLM fine-tuned on legal or medical knowledge may surpass a general-purpose LLM in those fields. These factors, among others, are driving the growth of SLMs, as they offer computational efficiency and focused expertise. However, this paper serves as a reminder that while there are compelling reasons to use smaller-scale models, increasing model scale has a significant and measurable effect on performance.
+
+The impact of these findings lies in their demonstration that certain capabilities are only accessible in large-scale models. This is a crucial insight as it suggests that, regardless of optimization or specialized training, there are abilities that small models simply cannot achieve. By showing that these emergent abilities require substantial scale, the paper highlights a fundamental trade-off in the development of language models: the efficiency and portability of SLMs versus the enhanced, often unexpected, capabilities that come with scaling up. The results here suggest that while SLMs have their place, large-scale models remain essential for applications requiring these unique emergent abilities, especially in complex, interdisciplinary tasks where smaller models may fall short.
+
+[risks]
 
 ### Future Directions
 
+scale up, figure out why this phenomenon exists and how to predict it
+
 ### Limitations and Potential Extensions
+
+what is the environmental tradeoff of scaling up? how far can the performance curve go? will it reach plateau? tradeoff of performace vs. cost / environmental cause
 
 ## Citation
 [citation]
