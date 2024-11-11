@@ -125,7 +125,11 @@ Additionally, the researchers note that while model scale has a clear impact on 
 
 ### Limitations and Potential Extensions
 
-what is the environmental tradeoff of scaling up? how far can the performance curve go? will it reach plateau? tradeoff of performace vs. cost / environmental cause
+While the authors make a small nod to the cost of computational resources needed for continued scaling of LLMs, they don’t fully address the extent of this cost, both financially and environmentally. At its current scale, ChatGPT’s daily energy use is around half a million kilowatt-hours—the same amount used to power about 180,000 U.S. households. If we keep scaling LLMs beyond their current size, energy consumption and environmental impact will only increase. With the threat of a climate crisis already looming, it raises the question: do the benefits of additional scaling outweigh the harm caused in this context?
+
+Another overlooked limitation is the accessibility of the resources needed to build and operate large-scale models. Not all organizations have the infrastructure to support these enormous computational needs, which could mean that only a few, well-funded groups have access to the best models. This creates a concentration of power that could hold back innovation and make it harder for smaller players to compete.
+
+If further research focuses on understanding the performance curve and the mechanisms behind emergence, we may be able to find ways to predict when emergent abilities will appear. Predicting the performance curve could help us identify where the tipping point is, allowing us to be more intentional with scaling and to avoid unnecessary costs and impacts.
 
 ## Citation
 [citation]
