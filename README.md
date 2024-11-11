@@ -132,8 +132,7 @@ Another overlooked limitation is the accessibility of the resources needed to bu
 If further research focuses on understanding the performance curve and the mechanisms behind emergence, we may be able to find ways to predict when emergent abilities will appear. Predicting the performance curve could help us identify where the tipping point is, allowing us to be more intentional with scaling and to avoid unnecessary costs and impacts.
 
 ## Citation
-[citation]
-
+Wei, J., Tay, Y., Bommasani, R., Raffel, C., Zoph, B., Borgeaud, S., Yogatama, D., Bosma, M., Zhou, D., Metzler, D., Chi, E. H., Hashimoto, T., Vinyals, O., Liang, P., Dean, J., & Fedus, W. (2022). Emergent abilities of large language models. arXiv. https://arxiv.org/abs/2206.07682
 
 
 
